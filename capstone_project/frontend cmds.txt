@@ -1,0 +1,45 @@
+while creating the ec2 instance  select SSH and  HTTP and HTTPS
+
+#sudo yum update -y
+
+#sudo yum install docker -y
+
+#sudo usermod -a -G docker ec2-user
+
+#sudo chmod 777 /var/run//docker.sock
+
+#docker login
+username :xxxx
+paswword:xxxx
+
+#sudo yum install git -y
+
+#git clone https://github.com/Mani10101/Capstone
+
+#ls
+
+#Capstone
+
+#cd Capstone
+
+#ls
+
+#cd client
+
+#vim Dockerfile (I, esc, :wq!)
+
+#cd src
+
+#vim App.js
+(Here we have to change the ip address with the public ip address of the instance)
+back to client by using cd ..
+
+#docker build -t frontend
+
+#docker run -d -p 3000:3000 frontend
+
+NOW open the ec2 instance and edit the inbound rules by adding rule
+CUSTOM TCP with a port number 3000
+with IPV4 anywhere
+ 
+To verify we copy the public ip address  with :3000 (Ex:54.237.28.152:3000)
